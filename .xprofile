@@ -1,11 +1,9 @@
-# Copy Manajaro i3 config
-start-pulseaudio-x11 &
-pa-applet &
-
+$HOME/setup/dwm-bar/dwm_bar.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 nitrogen --restore; sleep 1; compton -b & 
 nm-applet &
 xfce4-power-manager &
+pa-applet &
 xautolock -time 10 -locker blurlock &
 ff-theme-util &
 fix_xcursor &

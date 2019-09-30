@@ -98,3 +98,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='/usr/bin/git --git-dir=/home/omers/.dotfiles/ --work-tree=/home/omers'
+eval "$(direnv hook zsh)"
+
+export BROWSER=firefox
+
+# node variables
+export PATH=~/.npm-global/bin:$PATH
+# go variables
+export GOPATH=~/projects/goworkspace
+export PATH=~/projects/goworkspace/bin:$PATH
+
+#terminus
+export PATH=~/terminus/vendor/bin:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/omers/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/omers/.google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/omers/.google-cloud-sdk/completion.zsh.inc' ]; then . '/home/omers/.google-cloud-sdk/completion.zsh.inc'; fi
+
+source <(kubectl completion zsh)
