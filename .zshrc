@@ -109,7 +109,9 @@ export GOPATH=~/projects/goworkspace
 export PATH=~/projects/goworkspace/bin:$PATH
 
 #terminus
-export PATH=~/terminus/vendor/bin:$PATH
+export PATH=~/.terminus/vendor/bin:$PATH
+
+#source <(/home/omers/.google-cloud-sdk/bin/kubectl completion zsh)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/omers/.google-cloud-sdk/path.zsh.inc' ]; then . '/home/omers/.google-cloud-sdk/path.zsh.inc'; fi
